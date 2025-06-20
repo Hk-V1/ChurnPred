@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import LabelEncoder, StandardScaler
@@ -40,10 +34,4 @@ model.fit(X_train, y_train, epochs=30, batch_size=32, validation_split=0.2, verb
 model.save('churn_dl_model.h5')
 joblib.dump(scaler, 'scaler.pkl')
 joblib.dump(X.columns.tolist(), 'feature_columns.pkl')
-
-
-# In[ ]:
-
-
-
 
